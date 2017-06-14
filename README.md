@@ -15,7 +15,7 @@ README.mdを編集して、「【ここにConsoleログを記入】」の部分�
 - ログ（入力したコードと実行結果）をコピーして、下記に貼り付ける
 
 ```
-【ここにConsoleログを記入】
+【55】
 ```
 
 ### 4-2-1 引数 (p.81)
@@ -28,7 +28,7 @@ README.mdを編集して、「【ここにConsoleログを記入】」の部分�
 - ログをコピーして、下記に貼り付ける
 
 ```
-【ここにConsoleログを記入】
+【55】
 ```
 
 - p.82 リスト4.3: `list4-3.js` に記入する
@@ -40,7 +40,7 @@ README.mdを編集して、「【ここにConsoleログを記入】」の部分�
 - ログをコピーして、下記に貼り付ける
 
 ```
-【ここにConsoleログを記入】
+【55】
 ```
 
 以下、p.83「4-2-2 デフォルト引数」の上の行までは、自分で読んでください（入力は不要）。
@@ -55,9 +55,19 @@ README.mdを編集して、「【ここにConsoleログを記入】」の部分�
 - p.85 黒い枠で囲まれた部分（白地）の**2番目のみ**をConsoleで実行する
     - 1番目（`> function sum(rangeTo, rangeFrom = 1) {`から始まるもの）は、既に`list4-4.js`で記入したので不要
 - ログをコピーして、下記に貼り付ける
+function sum(rangeFrom,rangeTo = 10){
+    var total = 0;
+    for (var counter = rangeFrom; counter <= rangeTo; Counter++){
+        total += counter;
+    }
+	window.alert(total);
+}
 
+undefined
 ```
-【ここにConsoleログを記入】
+【VM246:3 Uncaught ReferenceError: Counter is not defined
+    at sum (<anonymous>:3:55)
+    at <anonymous>:1:1
 ```
 
 - **ここでGit(SourceTree)でステージング→commitしてください。**
@@ -68,9 +78,10 @@ README.mdを編集して、「【ここにConsoleログを記入】」の部分�
 - p.86～88（「4-2-4 返り値」の上まで） 黒い枠で囲まれた部分（白地）をConsoleで実行する
 - ログをコピーして、下記に貼り付ける
 - （p.89 Columnは記入不要（以下も同様））
-
+total;
 ```
-【ここにConsoleログを記入】
+【VM303:1 Uncaught ReferenceError: total is not defined
+    at <anonymous>:1:1】
 ```
 
 ### 4-2-4 返り値 (p.88 中央)
